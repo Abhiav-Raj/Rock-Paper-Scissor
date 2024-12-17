@@ -1,20 +1,20 @@
-Here’s a sample README for your Rock Paper Scissors game on GitHub:
+Here’s an updated version of your README to reflect that the game uses **Socket.IO** for real-time communication:
 
 ---
 
 # Rock Paper Scissors Game
 
-This is a simple **Rock Paper Scissors** game built using **HTML**, **CSS**, and **JavaScript**. The game allows users to play against the computer. Players can choose between rock, paper, or scissors, and the game will determine the winner based on the classic rules.
+This is a **Rock Paper Scissors** game built using **HTML**, **CSS**, **JavaScript**, and **Socket.IO**. The game allows two players to play against each other in real-time. Players can choose between rock, paper, or scissors, and the game will determine the winner based on the classic rules.
 
 ## Features
-- Play against the computer.
+- **Real-time multiplayer**: Play against another player in real-time using Socket.IO.
 - Easy-to-use interface with clear choices.
 - Display results for each round (win, lose, or draw).
 - Simple animations and interactions for a smooth user experience.
 
 ## Installation
 
-To play the game locally:
+To run the game locally:
 
 1. Clone the repository:
    ```bash
@@ -24,23 +24,32 @@ To play the game locally:
    ```bash
    cd rock-paper-scissors
    ```
-3. Open `index.html` in your browser to start playing the game.
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the server:
+   ```bash
+   npm start
+   ```
+5. Open `http://localhost:3000` in two different browsers or tabs to start playing the game with another player.
 
 ## How to Play
 
-1. Choose one of the three options: **Rock**, **Paper**, or **Scissors** by clicking on the corresponding button.
-2. The computer will randomly pick one of the three options.
-3. The winner is determined based on the following rules:
+1. Two players must join the game by opening the game in two different browsers or tabs.
+2. Both players will choose one of the three options: **Rock**, **Paper**, or **Scissors** by clicking on the corresponding button.
+3. The game will send the choices to the server via Socket.IO and the winner will be determined based on the following rules:
    - Rock beats Scissors.
    - Scissors beats Paper.
    - Paper beats Rock.
 4. The result of the game (win, lose, or draw) will be displayed after each round.
-5. Play as many rounds as you like!
+5. Players can play as many rounds as they want.
 
 ## Technologies Used
 - **HTML** for the structure of the game.
 - **CSS** for styling the user interface.
 - **JavaScript** for the game logic and interactivity.
+- **Socket.IO** for real-time communication between players.
 
 ## Demo
 
@@ -56,4 +65,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Let me know if you need any modifications or additional sections!
+Let me know if you need more adjustments!
