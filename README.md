@@ -1,13 +1,14 @@
-Here’s an updated version of your README to reflect that the game uses **Socket.IO** for real-time communication:
+Here's the updated README to include **Node.js** and **Express.js** as part of the project:
 
 ---
 
 # Rock Paper Scissors Game
 
-This is a **Rock Paper Scissors** game built using **HTML**, **CSS**, **JavaScript**, and **Socket.IO**. The game allows two players to play against each other in real-time. Players can choose between rock, paper, or scissors, and the game will determine the winner based on the classic rules.
+This is a **Rock Paper Scissors** game built using **HTML**, **CSS**, **JavaScript**, **Node.js**, **Express.js**, and **Socket.IO**. The game allows two players to play against each other in real-time. Players can choose between rock, paper, or scissors, and the game will determine the winner based on the classic rules.
 
 ## Features
-- **Real-time multiplayer**: Play against another player in real-time using Socket.IO.
+- **Real-time multiplayer**: Play against another player in real-time using **Socket.IO**.
+- Built with **Node.js** and **Express.js** to handle the server-side logic.
 - Easy-to-use interface with clear choices.
 - Display results for each round (win, lose, or draw).
 - Simple animations and interactions for a smooth user experience.
@@ -38,7 +39,7 @@ To run the game locally:
 
 1. Two players must join the game by opening the game in two different browsers or tabs.
 2. Both players will choose one of the three options: **Rock**, **Paper**, or **Scissors** by clicking on the corresponding button.
-3. The game will send the choices to the server via Socket.IO and the winner will be determined based on the following rules:
+3. The game will send the choices to the server via **Socket.IO** and the winner will be determined based on the following rules:
    - Rock beats Scissors.
    - Scissors beats Paper.
    - Paper beats Rock.
@@ -49,6 +50,8 @@ To run the game locally:
 - **HTML** for the structure of the game.
 - **CSS** for styling the user interface.
 - **JavaScript** for the game logic and interactivity.
+- **Node.js** as the runtime environment.
+- **Express.js** for handling the server-side logic and HTTP requests.
 - **Socket.IO** for real-time communication between players.
 
 ## Demo
@@ -63,6 +66,4 @@ Feel free to fork the repository and submit pull requests. If you find any issue
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
-Let me know if you need more adjustments!
+--- 
