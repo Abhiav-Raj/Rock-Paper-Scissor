@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p id="heading">Welcome to the Rock Paper Scissors game!</p>
+    <div class="main">
+        <div id="initial">
+            <button onclick="createGame()">Create Game</button>
+            <p>or</p>
+            <input type="text" id="roomUniqueId"><br>
+            <button onclick="joinGame()">Join a game</button>
+            <br>
+        </div>
+        <div id="gamePlay">
+            <div id="scoreboard" style="display: none;">
+                <p>Your Score: <span id="yourScore">0</span></p>
+                <p>Opponent Score: <span id="opponentScore">0</span></p>
+            </div>
+            <div id="waitingArea"></div>
+            <div id="gameArea" style="display: none;">
+                <div>
+                    <p>You:</p>
+                    <div id="player1Choice">
+                        <button onclick="sendChoice('Rock')"><img src="/Images/Rock.png" alt="Rock" style="width: 100px; height: 100px;"></button>
+                        <button onclick="sendChoice('Paper')"><img src="/Images/Paper.png" alt="Paper" style="width: 100px; height: 100px;"></button>
+                        <button onclick="sendChoice('Scissors')"><img src="/Images/Scissors.png" alt="Scissors" style="width: 100px; height: 100px;"></button>
+                    </div>
+                </div>
+                <div>
+                    <p>Opponent:</p>
+                    <div id="player2Choice">
+                        <p id="opponentState">Waiting for the opponent's move...</p>
+                    </div>
+                </div>
+            </div>
+            <div id="copyBtn">
+                <button id="copyRoomBtn" onclick="copyRoomCode()" style="display: none;">Copy Room Code</button>
+            </div>
+            <div id="winnerArea"></div>
+            <div id="replayArea">
+                <button id="replayButton" onclick="restartGame()" style="display: none;">Restart</button><br>
+                <button id="leaveButton" onclick="leaveGame()" style="display: none;">Leave Game</button>
+            </div>
+        </div>
+        <div class="popup-overlay" id="popupOverlay">
+            <div class="popup" id="popup">
+                <h3 id="popupMessage"></h3>
+                <button onclick="closePopup()">OK</button>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

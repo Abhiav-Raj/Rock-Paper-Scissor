@@ -1,0 +1,212 @@
+/* General styles */
+body {
+  font-family: gilroy;
+  text-align: center;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+#heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.main {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#initial button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+/* button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+} */
+
+#initial button:hover {
+  background-color: #45a049;
+}
+
+#initial button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Game-specific styles */
+#gameArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+#gameArea p{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#player1Choice {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: row; /* Buttons are aligned row-wise */
+  box-decoration-break: none;
+}
+#player1Choice button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#player1Choice img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#player2Choice {
+  text-align: right; /* Opponent section text aligned to the right */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#player2Choice p {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Scoreboard */
+#scoreboard {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Winner area */
+#winnerArea {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Buttons for game actions */
+#replayArea {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#replayArea button {
+  background-color: #ff9800;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#replayArea button:hover {
+  background-color: #e68900;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+}
+
+.popup h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.popup button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.popup button:hover {
+  background-color: #0056b3;
+}
+
+/* Copy room button */
+#copyBtn button {
+  background-color: #ff9800;
+  color: #fff;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#copyBtn button:hover {
+  background-color: #e68900;
+}
